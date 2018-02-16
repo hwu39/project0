@@ -2,8 +2,8 @@
 VERSION = 4
 PATCHLEVEL = 15
 SUBLEVEL = 0
-EXTRAVERSION =
-NAME = Fearless Coyote
+EXTRAVERSION = -cmsc421project0-hwu2
+NAME = Hongkun Wu
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -940,7 +940,7 @@ endif
 
 
 ifeq ($(KBUILD_EXTMOD),)
-core-y		+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/
+core-y		+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ hello/
 
 vmlinux-dirs	:= $(patsubst %/,%,$(filter %/, $(init-y) $(init-m) \
 		     $(core-y) $(core-m) $(drivers-y) $(drivers-m) \
